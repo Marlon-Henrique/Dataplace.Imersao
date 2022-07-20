@@ -17,7 +17,7 @@ namespace Dataplace.Imersao.Core.Domain.Orcamentos.ValueObjects
     {
         public OrcamentoItemPrecoTotal(decimal precoTabela, decimal precoVenda) 
         {
-            if(precoTabela <= 0)
+            if (precoTabela <= 0)
                 throw new ArgumentOutOfRangeException(nameof(precoTabela));
 
             if (precoVenda <= 0)
